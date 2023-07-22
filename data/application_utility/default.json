@@ -162,7 +162,7 @@
                 "name": "Spotify w/ Adblocker",
                 "icon": "spotify",
                 "description": "Dynamic",
-                "pkg": "spotify-adblock",
+                "pkg": "spotify-adblock-git",
                 "extra": []
             }
         ]
