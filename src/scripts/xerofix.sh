@@ -25,6 +25,7 @@ echo "3. Apply The Samba Share Fix."
 echo "4. Apply KDFontOP.c / Setfont Fix."
 echo "5. Restart PipeWire/PipeWire-Pulse."
 echo "6. Downgrade Grub & Get New xhbp Repo."
+echo "7. Enable The PipeWire Echo-Cancel Module."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -84,6 +85,15 @@ case $CHOICE in
       echo
 	  sleep 2
 	  sh /usr/local/bin/grubdown
+	  sleep 2
+      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
+
+      ;;
+
+    7 )
+      echo
+	  sleep 2
+	  sh /usr/local/bin/pipecho
 	  sleep 2
       clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
 
