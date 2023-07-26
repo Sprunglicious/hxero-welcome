@@ -22,9 +22,11 @@ echo "Hello $USER, Please Select Packages To Update."
 echo
 echo "########## Package Manager Selector ##########"
 echo
-echo "1.  Update Arch Packages."
-echo "2.  Update A.U.R Packages."
-echo "3.  Update Flatpak Packages."
+echo "1.  Update Arch Packages Only."
+echo "2.  Update Arch & A.U.R Packages."
+echo "3.  Update Flatpak Packages Only."
+echo
+echo "4.  Update All in one go. (Not Topgrade)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -53,10 +55,10 @@ case $CHOICE in
     2 )
       echo
       echo "##########################################"
-      echo "           Updating AUR Packages          "
+      echo "        pdating Arch & AUR Packages       "
       echo "##########################################"
 			sleep 3
-			sudo pamac update -a
+			yay -Syyu
 			sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -71,6 +73,20 @@ case $CHOICE in
       echo "##########################################"
 			sleep 3
 			flatpak update
+			sleep 3
+      echo "#######################################"
+      echo "                 Done !                "
+      echo "#######################################"
+            clear && sh /usr/share/xerowelcome/scripts/update_system.sh
+      ;;
+
+    4 )
+      echo
+      echo "##########################################"
+      echo "      Updating Everything in One Go       "
+      echo "##########################################"
+			sleep 3
+			yay -Syyu && flatpak update
 			sleep 3
       echo "#######################################"
       echo "                 Done !                "
