@@ -571,15 +571,7 @@
                 "description": "Dynamic",
                 "pkg": "simplex-chat-bin",
                 "extra": []
-            },
-            {
-                "name": "Whalebird",
-                "icon": "signal",
-                "description": "Dynamic",
-                "pkg": "whalebird-bin",
-                "extra": []
             }
-
         ]
     },
     {
