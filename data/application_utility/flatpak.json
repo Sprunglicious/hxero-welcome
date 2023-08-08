@@ -693,7 +693,7 @@
         ]
     },
     {
-        "name": "Internet Messaging",
+        "name": "Internet Social",
         "icon": "messagebox_info",
         "description": "Chat Clients",
         "apps": [
@@ -765,6 +765,13 @@
                 "icon": "messengerfordesktop",
                 "description": "Low latency encrypted VoIP client",
                 "pkg": "info.mumble.Mumble",
+                "extra": []
+            },
+            {
+                "name": "Session Desktop",
+                "icon": "caprine",
+                "description": "Encrypted Private messenger",
+                "pkg": "network.loki.Session",
                 "extra": []
             },
             {
