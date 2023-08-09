@@ -15,17 +15,18 @@ echo "Hello $USER, Please Select An Option Below.."
 echo
 echo "1.  Check Which nVidia GPU You Have."
 echo
-echo "############ Vanilla Drivers (Recommended) ############"
+echo "############## Vanilla Drivers (Recommended) ##############"
 echo
 echo "2. Latest Vanilla Drivers (900 Series & up)."
 echo "3. Latest Open-dkms Drivers (Experimental/Turing+)."
 echo
-echo "####### TKG Drivers (Optional/Use At Own Risk) ########"
+echo "######### TKG Legacy Drivers (Use At Own Risk). ###########"
 echo
-echo "4. Latest TKG Drivers (900 Series & up)."
-echo "5. Legacy TKG Drivers (Some 600/700 Series)."
+echo "4. Legacy TKG Drivers (Some 600/700 Series)."
 echo
-echo "6. Cleanup TKG &/or Vanilla Drivers. (Start Fresh)"
+echo "############### Troubleshooting. (Cleanup). ###############"
+echo
+echo "5. Remove all Drivers. (Start Fresh)"
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -80,7 +81,7 @@ case $CHOICE in
       echo "        Installing Vanilla Drivers        "
       echo "##########################################"
       sleep 3
-      sudo pacman -S --needed nvidia-dkms nvidia-settings nvidia-utils opencl-nvidia libvdpau lib32-libvdpau lib32-libvdpau lib32-nvidia-utils egl-wayland dxvk-nvapi-mingw libxnvctrl dxvk-bin lib32-libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader
+      sudo pacman -S --needed nvidia-dkms nvidia-settings nvidia-utils opencl-nvidia libvdpau lib32-libvdpau lib32-libvdpau lib32-nvidia-utils egl-wayland dxvk-nvapi-mingw libxnvctrl dxvk-bin lib32-libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader lib32-opencl-nvidia opencl-headers
       sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -111,28 +112,6 @@ case $CHOICE in
       ;;
 
     4 )
-      
-      echo
-      echo "####################################################"
-      echo "              New Feature Branch (TKG)              "
-      echo "                                                    "
-      echo "           Provide latest Driver features           "
-      echo "####################################################"
-      sleep 6
-      echo
-      echo "##########################################"
-      echo "   Installing nVidia R535.x GPU Drivers   "
-      echo "##########################################"
-      sleep 3
-      sudo pacman -S --needed nvidia-dkms-tkg nvidia-utils-tkg nvidia-settings-tkg nvidia-egl-wayland-tkg opencl-nvidia-tkg libxnvctrl lib32-libxnvctrl lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg dxvk-nvapi-mingw vulkan-icd-loader lib32-vulkan-icd-loader dxvk-bin
-      sleep 3
-      echo "#######################################"
-      echo "                 Done !                "
-      echo "#######################################"
-            exit
-      ;;
-
-    5 )
       echo
       echo "####################################################"
       echo "                Legacy Branch (TKG)                 "
@@ -154,7 +133,7 @@ case $CHOICE in
             exit
       ;;
 
-    6 )
+    5 )
       echo
       echo "#########################################"
       echo "     Uninstalling all nVidia Drivers     "
