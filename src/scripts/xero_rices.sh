@@ -19,9 +19,8 @@ echo "################# Rice Selector #################"
 echo
 echo "1. The Catppuccin Rice (Teddy)."
 echo "2. The Dunes Rice (GamerKing)."
-echo "3. The Layan Rice (DarkXero)."
-echo "4. The Nord Rice (DarkXero)."
-echo "5. The Sweet Rice (Teddy)."
+echo "3. The Nord Rice (DarkXero)."
+echo "4. The Sweet Rice (Teddy)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -62,25 +61,13 @@ case $CHOICE in
       echo "#################################################"
       echo
 			sleep 2
-			cd ~ && git clone https://github.com/xerolinux/xero-layan-git.git && cd ~/xero-layan-git/ && ./install.sh
-			sleep 3
-      clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
-
-      ;;
-
-    4 )
-      echo "#################################################"
-      echo "#             Applying Selected Rice            #"
-      echo "#################################################"
-      echo
-			sleep 2
 			cd ~ && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/ && ./install.sh
 			sleep 3
       clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
 
       ;;
 
-    5 )
+    4 )
       echo "#################################################"
       echo "#             Applying Selected Rice            #"
       echo "#################################################"
