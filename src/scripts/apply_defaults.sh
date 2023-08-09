@@ -32,43 +32,43 @@ case $CHOICE in
 
     1 )
       echo
-      echo "Option currently unavailable. Please check back soon..."
-#      tput setaf 4
-#      read -p "Final Warning, This Will Undo Your Customizations, Proceed ? (y/n): " proceed_response
-#      tput sgr0
-#      echo
-#      if [[ $proceed_response == "y" || $proceed_response == "yes" ]]; then
-#      echo
-#        echo "###################################"
-#        echo "  Restoring/Applying KDE defaults  "
-#        echo "###################################"
-#      sleep 2
-#      echo
-#      echo "Git Cloning Default Settings Repo"
-#      cd ~ && git clone https://github.com/xerolinux/xero-layan-git && cd xero-layan-git/
-#      sleep 2
-#      echo
-#      echo "Running Install Script..."
-#      sh install.sh
-#      echo
-#      rm -Rf ~/xero-layan-git/
-#      sleep 2
-#        # Prompt the user to reboot
-#        tput setaf 4
-#        read -p "Customization Restored. Reboot recommended. Reboot now? (y/n): " reboot_response
-#        tput setaf 0
-#      echo
-#        # Check the user's response
-#        if [[ $reboot_response == "y" || $reboot_response == "yes" ]]; then
-#          sudo reboot
-#        else
-#          echo
-#          echo "Please manually reboot your system to apply changes."
-#        fi
-#      else
-#        echo "Restoration cancelled."
-#        exit 0
-#      fi
+#      echo "Option currently unavailable. Please check back soon..."
+      tput setaf 4
+      read -p "Final Warning, This Will Undo Your Customizations, Proceed ? (y/n): " proceed_response
+      tput sgr0
+      echo
+      if [[ $proceed_response == "y" || $proceed_response == "yes" ]]; then
+      echo
+        echo "###################################"
+        echo "  Restoring/Applying KDE defaults  "
+        echo "###################################"
+      sleep 2
+      echo
+      echo "Git Cloning Default Settings Repo"
+      cd ~ && git clone https://github.com/xerolinux/xero-layan-git && cd xero-layan-git/
+      sleep 2
+      echo
+      echo "Running Install Script..."
+      sh install.sh
+      echo
+      rm -Rf ~/xero-layan-git/
+      sleep 2
+        # Prompt the user to reboot
+        tput setaf 4
+        read -p "Customization Restored. Reboot recommended. Reboot now? (y/n): " reboot_response
+        tput setaf 0
+      echo
+        # Check the user's response
+        if [[ $reboot_response == "y" || $reboot_response == "yes" ]]; then
+          sudo reboot
+        else
+          echo
+          echo "Please manually reboot your system to apply changes."
+        fi
+      else
+        echo "Restoration cancelled."
+        exit 0
+      fi
 
       ;;
 

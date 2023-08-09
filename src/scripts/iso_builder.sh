@@ -31,23 +31,23 @@ case $CHOICE in
 
     1 )
        echo
-       echo "Option currently unavailable. Will be back August 12th 2023..."
-#      echo
-#      echo "###########################################"
-#      echo "      Building XeroLinux KDE Flagship      "
-#      echo "###########################################"
-#			echo
-#			sleep 3
-#			cd ~ && git clone https://github.com/xerolinux/xero_iso.git
-#			sleep 3
-#			echo
-#			cd ~/xero_iso/ && ./build.sh
-#			sleep 3
-#			echo
-#			cd ~ && rm -rf ~/xero_iso/
-#     echo "###########################################"
-#      echo "      Done ! Check Home Folder for ISO     "
-#      echo "###########################################"
+#       echo "Option currently unavailable. Will be back August 12th 2023..."
+      echo
+      echo "###########################################"
+      echo "      Building XeroLinux KDE Flagship      "
+      echo "###########################################"
+			echo
+			sleep 3
+			cd ~ && git clone https://github.com/xerolinux/xero_iso.git
+			sleep 3
+			echo
+			cd ~/xero_iso/ && ./build.sh
+			sleep 3
+			echo
+			cd ~ && rm -rf ~/xero_iso/
+      echo "###########################################"
+      echo "      Done ! Check Home Folder for ISO     "
+      echo "###########################################"
       sleep 3
       clear && sh /usr/share/xerowelcome/scripts/iso_builder.sh
 
