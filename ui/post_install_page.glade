@@ -75,7 +75,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
 
 Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption. Not all GPUs are supported, your mileage may vary, so please enable it at YOUR OWN RISK ! Do your own research first, create a backup before venturing into the new world of Wayland.
 
-You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will prompted fpr password near the end.
+You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will prompted to enter root password near the end.
 
 Not everything on here is meant to be used, also don't ask if this tool is possible on other Arch-Based Distros, it was intended for XeroLinux wether it works or not is not up to us. We concentrate on XeroLinux nothing else.</property>
             <property name="wrap">True</property>
