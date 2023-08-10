@@ -77,9 +77,7 @@ If you encounter any issues, like for example Black Screen on startup, try switc
 
 It's always a good idea to create backup before updating drivers in case something goes wrong. Install appropriate version of TimeShift to do so. I cannot provide support for every scenario, keep that in mind while messing with drivers. 
 
-If you own an ASUS Laptop, we included links to the ASUS-Linux web page as well as their Discord where you will be able to get the support you need. Please don't ask us as we only support the hardware we have access to.
-
-Best of luck !</property>
+If you own an ASUS Laptop, we included links to the ASUS-Linux web page as well as their Discord where you will be able to get the support you need. Please don't ask us as we only support the hrdware we have access to.</property>
             <property name="justify">fill</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>
