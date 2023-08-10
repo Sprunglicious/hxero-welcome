@@ -75,8 +75,6 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
 
 Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption, so please enable it at YOUR OWN RISK !
 
-Use only what you need, not all are meant to be used. Also, this is just the beginning, we will have more tweaks added as time goes by. Tool will constantly evolve and change. 
-
 Enjoy tweaking your XeroLinux ;)</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>

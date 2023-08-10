@@ -71,10 +71,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
           <object class="GtkLabel" id="mainlabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">This is where you will be able to select the Drivers to install. Make sure you select the appropriate ones. For nVidia, we only provide latest Official and 470xx (TKG Legacy) ones. For older ones either Google "nvidia-all TKG" or do your own research, can't support all GPUs. If you own an ASUS Laptop click buttons below for assistance by the ASUS-Linux Alliance (Not me). For other Hardware support use "Hardware Service" button below to send us your config info.
-
-- For nVidia based GPUs select the "nVidia Proprietary Drivers".
-- For AMD(non Pro) and ATI (Radeon HD) select the "ATI/AMD Open Source Drivers".
+            <property name="label" translatable="yes">This is where you will be able to select the Drivers to install. Make sure you select the appropriate ones. For nVidia, we only provide latest Official and 470xx (TKG Legacy) ones. For older ones either Google "nvidia-all TKG" or do your own research, can't support all nVidia GPUs.
 
 If you encounter any issues, like for example Black Screen on startup, try switching to LightDM / GDM either via button below or in TTY (ctrl+alt+F3) via the tolightdm or togdm commands, or switch to the LTS Kernel.</property>
             <property name="justify">fill</property>
