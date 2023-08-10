@@ -73,13 +73,11 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">This is where you configure your system using variety of our scripts. We will do our best to help you tweak your system for a good balance between best performance &amp; stability. For troubleshooting, please use the "More Xero Tweaks" button.
 
-Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption, so please enable it at YOUR OWN RISK !
+Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption. Not all GPUs are supported, your mileage may vary, so please enable it at YOUR OWN RISK ! Do your careful research first &amp; create a backup before venturin into thie new world of Wayland.
 
 You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will prompted fpr password near the end.
 
-Not everything on here is meant to be used, also don't ask if this tool is possible on other Arch-Based Distros, it was intended for XeroLinux wether it works or not is not up to us. We concentrate on XeroLinux nothing else.
-
-Have fun tweaking !</property>
+Not everything on here is meant to be used, also don't ask if this tool is possible on other Arch-Based Distros, it was intended for XeroLinux wether it works or not is not up to us. We concentrate on XeroLinux nothing else.</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>
             <property name="max-width-chars">1</property>
