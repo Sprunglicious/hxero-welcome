@@ -77,7 +77,7 @@ Wayland support especially when it comes to nVidia is highly experimental since 
 
 You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will prompted to enter root password near the end.
 
-Not everything on here is meant to be used, also don't ask if it's possible to use this tool on other Arch-Based Distros, it was intended for XeroLinux wether it works or not is not up to us. We concentrate on XeroLinux nothing else.</property>
+Not everything on here is meant to be used, also don't ask if this tool is possible on other Arch-Based Distros, it was intended for XeroLinux wether it works or not is not up to us. We concentrate on XeroLinux nothing else.</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>
             <property name="max-width-chars">1</property>
