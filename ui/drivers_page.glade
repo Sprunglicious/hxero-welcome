@@ -75,7 +75,9 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
 
 If you encounter any issues, like for example Black Screen on startup, try switching to LightDM / GDM either via button below or in TTY (ctrl+alt+F3) via the tolightdm or togdm commands, or switch to the LTS Kernel.
 
-It's always a good idea to create backup before updating drivers in case something goes wrong. Install appropriate version of TimeShift to do so. I cannot privide support for every scenario, keep that in mind while messing with drivers. </property>
+It's always a good idea to create backup before updating drivers in case something goes wrong. Install appropriate version of TimeShift to do so. I cannot privide support for every scenario, keep that in mind while messing with drivers. 
+
+If you own an ASUS Laptop, we included links to the ASUS-Linux web page as well as their Discord where you will be able to get the support you need. Please don't ask us as we only support the hrdware we have access to.</property>
             <property name="justify">fill</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>
