@@ -20,7 +20,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
 <interface domain="xerowelcome">
-  <requires lib="gtk+" version="3.20"/>
+  <requires lib="gtk+" version="3.24"/>
   <!-- interface-css-provider-path style.css -->
   <!-- interface-license-type gplv3 -->
   <!-- interface-name cachyos-welcome -->
@@ -74,6 +74,8 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="label" translatable="yes">This is where you configure your system using variety of our scripts. We will do our best to help you tweak your system for a good balance between best performance &amp; stability. For troubleshooting, please use the "More Xero Tweaks" button.
 
 Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption, so please enable it at YOUR OWN RISK !
+
+You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will propmted fpr password near the end.
 
 Enjoy tweaking your XeroLinux ;)</property>
             <property name="wrap">True</property>

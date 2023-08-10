@@ -73,7 +73,9 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">This is where you will be able to select the Drivers to install. Make sure you select the appropriate ones. For nVidia, we only provide latest Official and 470xx (TKG Legacy) ones. For older ones either Google "nvidia-all TKG" or do your own research, can't support all nVidia GPUs.
 
-If you encounter any issues, like for example Black Screen on startup, try switching to LightDM / GDM either via button below or in TTY (ctrl+alt+F3) via the tolightdm or togdm commands, or switch to the LTS Kernel.</property>
+If you encounter any issues, like for example Black Screen on startup, try switching to LightDM / GDM either via button below or in TTY (ctrl+alt+F3) via the tolightdm or togdm commands, or switch to the LTS Kernel.
+
+It's always a good idea to create backup before updating drivers in case something goes wrong. Install appropriate version of TimeShift to do so. I cannot privide support for every scenario, keep that in mind while messing with drivers. </property>
             <property name="justify">fill</property>
             <property name="wrap">True</property>
             <property name="width-chars">1</property>
