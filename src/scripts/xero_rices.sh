@@ -9,7 +9,7 @@ tput setaf 3
 
 echo "#################################################"
 echo "#          The XeroLinux Rice Installer         #"
-echo "#      The Following Rices Are for KDE Only     #"
+echo "#      The Following Script is for KDE Only     #"
 echo "#################################################"
 tput sgr0
 echo
@@ -21,6 +21,11 @@ echo "1. The Catppuccin Rice (Teddy)."
 echo "2. The Dunes Rice (GamerKing)."
 echo "3. The Nord Rice (DarkXero)."
 echo "4. The Sweet Rice (Teddy)."
+echo
+echo "################# Ricing Tweaks #################"
+echo
+echo "5. Activate Flatpak Theming (Required If used)."
+echo "6. Update Default System Theme (KDE Release Only)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -75,6 +80,24 @@ case $CHOICE in
 			sleep 2
 			cd ~ && git clone https://github.com/xerolinux/xero-sweet-git.git && cd ~/xero-sweet-git/ && ./install.sh
 			sleep 3
+      clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
+
+      ;;
+
+    5 )
+      echo
+      sleep 2
+      sh /usr/local/bin/flatfix
+      sleep 2
+      clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
+
+      ;;
+
+    6 )
+      echo
+      sleep 2
+      sh /usr/local/bin/stup
+      sleep 2
       clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
 
       ;;

@@ -71,7 +71,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
           <object class="GtkLabel" id="mainlabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">This is where you configure your system using variety of our scripts. We will do our best to help you tweak your system for a good balance between best performance &amp; stability. For troubleshooting, please use the "More Xero Tweaks" button.
+            <property name="label" translatable="yes">This is where you configure your system using variety of our scripts. We will do our best to help you tweak your system for a good balance between best performance &amp; stability. For troubleshooting, please use the "Troubleshooting" button (D'uh).
 
 Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption. Not all GPUs are supported, your mileage may vary, so please enable it at YOUR OWN RISK ! Do your own research first, create a backup before venturing into the new world of Wayland.
 
@@ -202,12 +202,12 @@ Not everything on here is meant to be used, also don't ask if it's possible to u
         </child>
         <child>
           <object class="GtkButton" id="xerofix">
-            <property name="label" translatable="yes">More Xero Tweaks</property>
+            <property name="label" translatable="yes">Troubleshooting</property>
             <property name="name">xerofix</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text">Extra Tweaks</property>
+            <property name="tooltip-text">In case you need help.</property>
           </object>
           <packing>
             <property name="left-attach">2</property>

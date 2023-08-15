@@ -7,25 +7,20 @@
 ##################################################################################################################
 tput setaf 3
 echo "#################################################"
-echo "#          Extra XeroLinux Fixes/Tweaks         #"
+echo "#            XeroLinux Fixes/Tweaks.            #"
 echo "#################################################"
 tput sgr0
 echo
 echo "Hello $USER, what would you like to do today ?"
 echo
-echo "################# System Tweaks #################"
-echo
-echo "1. Activate Flatpak Theming (Required If used)."
-echo "2. Update Pacman.conf File To Latest (Optional)."
-echo "3. Update Default System Theme (KDE Release Only)."
-echo
 echo "################ Troubleshooting ################"
 echo
-echo "4. Apply The Samba Share Fix."
-echo "5. Apply KDFontOP.c / Setfont Fix."
-echo "6. Restart PipeWire/PipeWire-Pulse."
-echo "7. Downgrade Grub & Get New xhbp Repo."
-echo "8. Enable The PipeWire Echo-Cancel Module."
+echo "1. Apply The Samba Share Fix."
+echo "2. Apply KDFontOP.c / Setfont Fix."
+echo "3. Restart PipeWire/PipeWire-Pulse."
+echo "4. Downgrade Grub & Get New xhbp Repo."
+echo "5. Enable The PipeWire Echo-Cancel Module."
+echo "6. Update Pacman.conf File To Latest (Optional)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -39,40 +34,13 @@ case $CHOICE in
     1 )
       echo
       sleep 2
-      sh /usr/local/bin/flatfix
-      sleep 2
-      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
-
-      ;;
-
-    2 )
-      echo
-      sleep 2
-      sh /usr/local/bin/pacup
-      sleep 2
-      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
-
-      ;;
-
-    3 )
-      echo
-      sleep 2
-      sh /usr/local/bin/stup
-      sleep 2
-      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
-
-      ;;
-
-    4 )
-      echo
-      sleep 2
       sh /usr/local/bin/smbfix
       sleep 2
       clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
 
       ;;
 
-    5 )
+    2 )
       echo
 	  sleep 2
       sh /usr/local/bin/kdfix
@@ -83,7 +51,7 @@ case $CHOICE in
       ;;
 
 
-    6 )
+    3 )
       echo
 	  sleep 2
 	  sh /usr/local/bin/rpipe
@@ -92,7 +60,7 @@ case $CHOICE in
 
       ;;
 
-    7 )
+    4 )
       echo
 	  sleep 2
 	  sh /usr/local/bin/grubdown
@@ -101,11 +69,20 @@ case $CHOICE in
 
       ;;
 
-    8 )
+    5 )
       echo
 	  sleep 2
 	  sh /usr/local/bin/pipecho
 	  sleep 2
+      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
+
+      ;;
+
+    6 )
+      echo
+      sleep 2
+      sh /usr/local/bin/pacup
+      sleep 2
       clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
 
       ;;
