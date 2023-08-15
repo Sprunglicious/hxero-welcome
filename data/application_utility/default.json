@@ -180,13 +180,6 @@
                 "extra": []
             },
             {
-                "name": "Geekbench",
-                "icon": "libreoffice-main",
-                "description": "Dynamic",
-                "pkg": "geekbench",
-                "extra": []
-            },
-            {
                 "name": "GPU Test",
                 "icon": "indicator-sensors-gpu",
                 "description": "Dynamic",

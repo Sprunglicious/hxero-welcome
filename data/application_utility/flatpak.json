@@ -572,6 +572,13 @@
                 "extra": []
             },
             {
+                "name": "Tesseract",
+                "icon": "xonotic",
+                "description": "First-person shooter with cooperative in-game map editing",
+                "pkg": "gg.tesseract.Tesseract",
+                "extra": []
+            },
+            {
                 "name": "Who Wants To Be a Millionaire",
                 "icon": "net.pcsx2.PCSX2",
                 "description": "Answer all questions to win $1 million.",
@@ -1157,6 +1164,13 @@
                 "icon": "application-x-firmware",
                 "description": "Install firmware on devices",
                 "pkg": "org.gnome.Firmware",
+                "extra": []
+            },
+            {
+                "name": "Geekbench 6",
+                "icon": "geekbench",
+                "description": "Cross-platform system benchmark",
+                "pkg": "com.geekbench.Geekbench6",
                 "extra": []
             },
             {
