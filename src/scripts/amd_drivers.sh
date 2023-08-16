@@ -55,7 +55,7 @@ case $CHOICE in
       echo "#######################################"
       echo "                 Done !                "
       echo "#######################################"
-            clear && sh /usr/share/xerowelcome/scripts/FOSS_drivers.sh
+            clear && sh /usr/share/xerowelcome/scripts/amd_drivers.sh
       ;;
 
     2 )

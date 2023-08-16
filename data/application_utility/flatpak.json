@@ -502,6 +502,13 @@
                 "extra": []
             },
             {
+                "name": "Alien Arena",
+                "icon": "artscontrol",
+                "description": "Ultra fast paced arena FPS",
+                "pkg": "org.alienarena.alienarena",
+                "extra": []
+            },
+            {
                 "name": "AstroMenace",
                 "icon": "artscontrol",
                 "description": "Hardcore 3D space scroll-shooter with spaceship upgrade possibilities",
