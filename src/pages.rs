@@ -285,7 +285,7 @@ pub fn create_faq_page(builder: &Builder) {
     let pacman_back_btn: gtk::Button = page_builder.object("pacman-back").unwrap();
     let downgrade_btn: gtk::Button = page_builder.object("downgrade").unwrap();
     let grub_issue_btn: gtk::Button = page_builder.object("grub-issue").unwrap();
-    let ame_btn: gtk::Button = page_builder.object("ame").unwrap();
+    let snap_btn: gtk::Button = page_builder.object("snap").unwrap();
 
     build_iso_btn.connect_clicked(move |_| {
         let uri = "https://forum.xerolinux.xyz/thread-118.html";
@@ -323,8 +323,8 @@ pub fn create_faq_page(builder: &Builder) {
         let uri = "https://forum.xerolinux.xyz/thread-164.html";
         let _ = gtk::show_uri_on_window(gtk::Window::NONE, uri, 0);
     });
-    ame_btn.connect_clicked(move |_| {
-        let uri = "https://forum.xerolinux.xyz/thread-235.html";
+    snap_btn.connect_clicked(move |_| {
+        let uri = "https://forum.xerolinux.xyz/thread-308.html";
         let _ = gtk::show_uri_on_window(gtk::Window::NONE, uri, 0);
     });
 

@@ -188,9 +188,9 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="ame">
-            <property name="label" translatable="yes">Amethyst AUR Helper How-To</property>
-            <property name="name">ame</property>
+          <object class="GtkButton" id="snap">
+            <property name="label" translatable="yes">Want to enable Snap-Support ?</property>
+            <property name="name">snap</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="receives-default">True</property>
