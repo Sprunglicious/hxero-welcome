@@ -20,8 +20,7 @@ echo "2. Apply KDFontOP.c / Setfont Fix."
 echo "3. Restart PipeWire/PipeWire-Pulse."
 echo "4. Downgrade Grub & Get New xhbp Repo."
 echo "5. Enable The PipeWire Echo-Cancel Module."
-echo "6. Add Snap Support (Not Officially Supported)."
-echo "7. Update Pacman.conf File To Latest (Optional)."
+echo "6. Update Pacman.conf File To Latest (Optional)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -80,15 +79,6 @@ case $CHOICE in
       ;;
 
     6 )
-      echo
-      sleep 2
-      sh /usr/local/bin/snps
-      sleep 2
-      clear && sh /usr/share/xerowelcome/scripts/xerofix.sh
-
-      ;;
-
-    7 )
       echo
       sleep 2
       sh /usr/local/bin/pacup
