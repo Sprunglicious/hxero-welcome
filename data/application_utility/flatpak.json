@@ -1339,7 +1339,7 @@
                 "icon": "obs",
                 "description": "Live streaming and video recording software",
                 "pkg": "com.obsproject.Studio",
-                "extra": ["com.obsproject.Studio.Plugin.OBSVkCapture","com.obsproject.Studio.Plugin.Gstreamer","com.obsproject.Studio.Plugin.TransitionTable","com.obsproject.Studio.Plugin.waveform","com.obsproject.Studio.Plugin.InputOverlay","com.obsproject.Studio.Plugin.SceneSwitcher","com.obsproject.Studio.Plugin.MoveTransition","com.obsproject.Studio.Plugin.ScaleToSound","com.obsproject.Studio.Plugin.WebSocket"]
+                "extra": ["com.obsproject.Studio.Plugin.OBSVkCapture","com.obsproject.Studio.Plugin.Gstreamer","com.obsproject.Studio.Plugin.TransitionTable","com.obsproject.Studio.Plugin.waveform","com.obsproject.Studio.Plugin.InputOverlay","com.obsproject.Studio.Plugin.SceneSwitcher","com.obsproject.Studio.Plugin.MoveTransition","com.obsproject.Studio.Plugin.ScaleToSound","com.obsproject.Studio.Plugin.WebSocket","com.obsproject.Studio.Plugin.DroidCam","com.obsproject.Studio.Plugin.BackgroundRemoval","com.obsproject.Studio.Plugin.GStreamerVaapi","com.obsproject.Studio.Plugin.VerticalCanvas","org.freedesktop.Platform.VulkanLayer.OBSVkCapture"]
             },
             {
                 "name": "OpenShot Video Editor",
