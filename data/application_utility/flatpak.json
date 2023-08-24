@@ -1202,6 +1202,13 @@
                 "extra": []
             },
             {
+                "name": "Mission Center",
+                "icon": "system",
+                "description": "Task Manager Clone",
+                "pkg": "io.missioncenter.MissionCenter",
+                "extra": []
+            },
+            {
                 "name": "OpenRGB",
                 "icon": "OpenRGB",
                 "description": "Open source RGB lighting control",
