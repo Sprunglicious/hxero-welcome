@@ -38,7 +38,7 @@ pub fn create_postinstall_page(builder: &Builder) {
     let init_snapper_btn: gtk::Button = page_builder.object("init-snapper").unwrap();
     let switch_to_zsh_btn: gtk::Button = page_builder.object("switch-to-zsh").unwrap();
     let apply_defaults_btn: gtk::Button = page_builder.object("apply-defaults").unwrap();
-    let enable_wayland_btn: gtk::Button = page_builder.object("enable-wayland").unwrap();
+    let pacseek_btn: gtk::Button = page_builder.object("pacseek").unwrap();
     let iso_builder_btn: gtk::Button = page_builder.object("iso-builder").unwrap();
     let xero_rice_btn: gtk::Button = page_builder.object("xero-rices").unwrap();
     let plasma_firewall_btn: gtk::Button = page_builder.object("plasma-firewall").unwrap();
@@ -59,9 +59,9 @@ pub fn create_postinstall_page(builder: &Builder) {
             false,
         );
     });
-    enable_wayland_btn.connect_clicked(move |_| {
+    pacseek_btn.connect_clicked(move |_| {
         let _ = utils::run_cmd_terminal(
-            String::from("/usr/share/xerowelcome/scripts/enable_wayland.sh"),
+            String::from("/usr/bin/pacseek"),
             false,
         );
     });
