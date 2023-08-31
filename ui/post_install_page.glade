@@ -146,12 +146,12 @@ Not everything on here is meant to be used, also don't ask if it's possible to u
         </child>
         <child>
           <object class="GtkButton" id="xero-rices">
-            <property name="label" translatable="yes">XeroLinux Rices</property>
+            <property name="label" translatable="yes">XeroLinux KDE Rices</property>
             <property name="name">xero-rices</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text">Apply our Rices</property>
+            <property name="tooltip-text">Apply our KDE Rices</property>
           </object>
           <packing>
             <property name="left-attach">2</property>

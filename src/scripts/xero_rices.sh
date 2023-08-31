@@ -24,8 +24,9 @@ echo "4. The Sweet Rice (Teddy)."
 echo
 echo "################# Ricing Tweaks #################"
 echo
-echo "5. Activate Flatpak Theming (Required If used)."
-echo "6. Update Default System Theme (KDE Release Only)."
+echo "5. Reset config back to Pure Vanilla KDE."
+echo "6. Activate Flatpak Theming (Required If used)."
+echo "7. Update Default System Theme (Layan KDE/GTK)."
 echo
 echo "Type Your Selection. To Exit, just close Window."
 echo
@@ -37,6 +38,7 @@ read CHOICE
 case $CHOICE in
 
     1 )
+      echo
       echo "#################################################"
       echo "#             Applying Selected Rice            #"
       echo "#################################################"
@@ -49,6 +51,7 @@ case $CHOICE in
       ;;
 
     2 )
+      echo
       echo "#################################################"
       echo "#             Applying Selected Rice            #"
       echo "#################################################"
@@ -61,6 +64,7 @@ case $CHOICE in
       ;;
 
     3 )
+      echo
       echo "#################################################"
       echo "#             Applying Selected Rice            #"
       echo "#################################################"
@@ -73,6 +77,7 @@ case $CHOICE in
       ;;
 
     4 )
+      echo
       echo "#################################################"
       echo "#             Applying Selected Rice            #"
       echo "#################################################"
@@ -86,6 +91,25 @@ case $CHOICE in
 
     5 )
       echo
+      echo "#################################################"
+      echo "#            Resetting to Vanilla KDE           #"
+      echo "#                                               #"
+      echo "#     Warning, will undo current settings !     #"
+      echo "# This will revert settings to Pure Vanilla KDE #"
+      echo "#################################################"
+      echo
+			sleep 6
+			cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && rm -Rf ~/.config/
+			sleep 3
+			echo
+			echo "Config has been reset, please save your work and reboot..."
+			sleep 3
+      clear && sh /usr/share/xerowelcome/scripts/xero_rices.sh
+
+      ;;
+
+    6 )
+      echo
       sleep 2
       sh /usr/local/bin/flatfix
       sleep 2
@@ -93,7 +117,7 @@ case $CHOICE in
 
       ;;
 
-    6 )
+    7 )
       echo
       sleep 2
       sh /usr/local/bin/stup

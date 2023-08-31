@@ -11,7 +11,7 @@ echo "#                         !!! XeroLinux Reset Tool !!!                    
 echo "#                                                                             #"
 echo "#              Having Issues With Messed Up Layout or Settings ?              #"
 echo "#                                                                             #"
-echo "#            This Will Restore Stock Defaults. Layout WILL BE RESET           #"
+echo "#             This Will Restore OOB Defaults. Layout WILL BE RESET            #"
 echo "###############################################################################"
 tput sgr0
 echo
