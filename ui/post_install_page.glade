@@ -73,7 +73,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">This is where you configure your system using variety of our scripts. We will do our best to help you tweak your system for a good balance between best performance &amp; stability. For troubleshooting, please use the "Troubleshooting" button (D'uh).
 
-Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption, that's why we removed it from the tool. Not all GPUs are supported, so please enable it at YOUR OWN RISK ! Do your own research first.
+Wayland support especially when it comes to nVidia is highly experimental since it's not yet ready for mass consumption, that's why we decided to remove it from the tool. Not all GPUs are supported, so please use the ArchWiki regarding your setup for now. You will be on your own...
 
 You can also build any of our 3 ISOs using this tool, just click on the "Xero ISO Builder" button, select which one you want to build and watch it do its magic, it might take some time depends on your hardware config. Also keep a close eye on it as you will prompted to enter root password near the end.
 
