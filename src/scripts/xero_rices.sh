@@ -56,8 +56,11 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
+        exit 0
 
       ;;
 
@@ -74,7 +77,7 @@ case $CHOICE in
       # Prompt the user to reboot
         tput setaf 4
         read -p "Customization Restored. Reboot recommended. Reboot now? (y/n): " reboot_response
-        tput setaf 0
+        tput sgr0
       echo
         # Check the user's response
         if [[ $reboot_response == "y" || $reboot_response == "yes" ]]; then
@@ -83,6 +86,7 @@ case $CHOICE in
           echo
           echo "Please manually reboot your system to apply changes."
         fi
+        exit 0
 
       ;;
 
@@ -106,8 +110,11 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
+        exit 0
 
       ;;
 
@@ -131,8 +138,11 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
+        exit 0
 
       ;;
 
@@ -147,9 +157,11 @@ case $CHOICE in
       echo
 			sleep 6
 			cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && rm -Rf ~/.config/
+			sudo sed -i "s/GRUB_THEME/#GRUB_THEME/g" /etc/default/grub
+            sudo grub-mkconfig -o /boot/grub/grub.cfg
 			sleep 3
 			echo
-			# Prompt the user to reboot
+        # Prompt the user to reboot
         tput setaf 4
         read -p "Customization Restored. Reboot recommended. Reboot now? (y/n): " reboot_response
         tput setaf 0
@@ -159,8 +171,11 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
+        exit 0
 
       ;;
 

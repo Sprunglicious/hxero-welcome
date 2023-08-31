@@ -63,7 +63,9 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
       else
         echo "Restoration cancelled."
@@ -116,7 +118,9 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
       else
         echo "Restoration cancelled."
@@ -159,7 +163,9 @@ case $CHOICE in
           sudo reboot
         else
           echo
+          tput setaf 4
           echo "Please manually reboot your system to apply changes."
+          tput sgr0
         fi
       else
         echo "Restoration cancelled."
