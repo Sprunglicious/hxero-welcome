@@ -82,6 +82,7 @@ case $CHOICE in
       echo "##########################################"
       sleep 3
       sudo pacman -S --needed nvidia-dkms nvidia-settings nvidia-utils opencl-nvidia libvdpau lib32-libvdpau lib32-libvdpau lib32-nvidia-utils egl-wayland dxvk-nvapi-mingw libxnvctrl dxvk-bin lib32-libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader lib32-opencl-nvidia opencl-headers
+      sudo mkinitcpio -P
       sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -104,6 +105,7 @@ case $CHOICE in
       echo "##########################################"
       sleep 3
       sudo pacman -S --needed nvidia-open-dkms nvidia-settings nvidia-utils opencl-nvidia libvdpau lib32-libvdpau lib32-libvdpau lib32-nvidia-utils egl-wayland dxvk-nvapi-mingw libxnvctrl dxvk-bin lib32-libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader
+      sudo mkinitcpio -P
       sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -126,6 +128,7 @@ case $CHOICE in
       echo "##########################################"
       sleep 3
       sudo pacman -S --needed nvidia-470xx-dkms-tkg nvidia-470xx-utils-tkg nvidia-470xx-settings-tkg opencl-nvidia-470xx-tkg libxnvctrl-470xx lib32-nvidia-470xx-utils-tkg lib32-opencl-nvidia-470xx-tkg lib32-libxnvctrl-470xx
+      sudo mkinitcpio -P
       sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -178,6 +181,7 @@ case $CHOICE in
     for package in "${packages[@]}"; do
      sudo pacman -Rdd --noconfirm "$package" > /dev/null 2>&1
     done
+      sudo mkinitcpio -P
       sleep 3
       echo
       echo "#######################################"

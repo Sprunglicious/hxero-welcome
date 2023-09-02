@@ -65,6 +65,7 @@ case $CHOICE in
       echo "##########################################"
 			sleep 3
 			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver libclc vulkan-radeon lib32-vulkan-radeon lib32-amdvlk amdvlk vulkan-icd-loader lib32-vulkan-icd-loader
+			sudo mkinitcpio -P
 			sleep 3
       echo "#######################################"
       echo "                 Done !                "
@@ -79,6 +80,7 @@ case $CHOICE in
       echo "##########################################"
 			sleep 3
 			sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver libclc
+			sudo mkinitcpio -P
 			sleep 3
       echo "#######################################"
       echo "                 Done !                "
