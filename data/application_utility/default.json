@@ -643,6 +643,13 @@
                 "extra": ["alpm_octopi_utils","octopi-notifier-qt5"]
             },
             {
+                "name": "Pamac (No-Snap)",
+                "icon": "pamac",
+                "description": "Dynamic",
+                "pkg": "pamac-nosnap",
+                "extra": ["libpamac-nosnap","pamac-tray-icon-plasma"]
+            },
+            {
                 "name": "Paru",
                 "icon": "konsole",
                 "description": "Dynamic",

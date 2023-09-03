@@ -179,9 +179,8 @@ case $CHOICE in
       )
     # Loop through the packages and remove them
     for package in "${packages[@]}"; do
-     sudo pacman -Rdd --noconfirm "$package" > /dev/null 2>&1
+     sudo pacman -Rdd --noconfirm "$package" > /dev/null 2>&1; sudo mkinitcpio -P
     done
-      sudo mkinitcpio -P
       sleep 3
       echo
       echo "#######################################"
