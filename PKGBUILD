@@ -2,7 +2,7 @@
 
 pkgname=xerowelcome
 pkgver=1.3.1
-pkgrel=7
+pkgrel=8
 pkgdesc='Welcome screen for XeroLinux'
 arch=('x86_64')
 license=(GPLv3)

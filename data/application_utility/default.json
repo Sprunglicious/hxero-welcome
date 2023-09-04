@@ -647,7 +647,7 @@
                 "icon": "pamac",
                 "description": "Dynamic",
                 "pkg": "pamac-nosnap",
-                "extra": ["libpamac-nosnap","pamac-tray-icon-plasma"]
+                "extra": ["libpamac-nosnap","pamac-cli","pamac-tray-icon-plasma"]
             },
             {
                 "name": "Paru",
