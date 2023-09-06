@@ -646,8 +646,8 @@
                 "name": "Pamac (No-Snap)",
                 "icon": "pamac",
                 "description": "Dynamic",
-                "pkg": "pamac-nosnap",
-                "extra": ["libpamac-nosnap","pamac-cli","pamac-tray-icon-plasma"]
+                "pkg": "pamac-all",
+                "extra": ["libpamac-full","pamac-cli","pamac-tray-icon-plasma","archlinux-appstream-data"]
             },
             {
                 "name": "Paru",
