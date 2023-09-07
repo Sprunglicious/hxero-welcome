@@ -71,7 +71,7 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="has-focus">True</property>
-                <property name="label" translatable="yes">Welcome to XeroLinux!</property>
+                <property name="label" translatable="yes">Welcome to HXERO!</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                   <attribute name="scale" value="2"/>
@@ -87,9 +87,11 @@ along with cachyos-welcome.  If not, see <http://www.gnu.org/licenses/>.
               <object class="GtkLabel" id="welcomelabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">Thank you for joining our community!
+                <property name="label" translatable="yes">                                                   Thank you for using HXERO!
 
-We hope that you will enjoy using XeroLinux. Keep in mind that this is based on Arch, you should know your way around Linux and be self-reliant, so use the ArchWiki button below for troubleshooting before asking for support. Also do not uninstall this tool as it's an essential part of XeroLinux. ;)</property>
+We hope that you like HXERO and it's specific confiigurations we have 
+handpicked! Necessary credits for the dotfile config owners are in the designated 
+scripts! Please give them a go and let us know what you think; oh, and remember they are just suggestions! You can apply any dotfiles if you have the know-how!</property>
                 <property name="wrap">True</property>
                 <property name="width-chars">1</property>
                 <property name="max-width-chars">1</property>
@@ -373,7 +375,7 @@ We hope that you will enjoy using XeroLinux. Keep in mind that this is based on 
               <object class="GtkLabel" id="installlabel">
                 <property name="name">installlabel</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">INSTALLATION</property>
+                <property name="label" translatable="yes">LOCAL INSTALLATION</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -444,10 +446,36 @@ We hope that you will enjoy using XeroLinux. Keep in mind that this is based on 
               </packing>
             </child>
             <child>
-              <placeholder/>
+              <object class="GtkButton" id="development1">
+                <property name="label" translatable="yes">HXero Configs!</property>
+                <property name="name">development</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">The infamous ArchWiki</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">7</property>
+              </packing>
             </child>
             <child>
-              <placeholder/>
+              <object class="GtkButton" id="development2">
+                <property name="label" translatable="yes">HXERO Wiki</property>
+                <property name="name">development</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">The infamous ArchWiki</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">7</property>
+              </packing>
             </child>
             <child>
               <placeholder/>
@@ -487,7 +515,7 @@ We hope that you will enjoy using XeroLinux. Keep in mind that this is based on 
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title">XeroLinux Tool</property>
+        <property name="title">HXERO Tool</property>
         <property name="show-close-button">True</property>
         <child>
           <placeholder/>

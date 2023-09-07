@@ -7,17 +7,17 @@
 ##################################################################################################################
 tput setaf 3
 
-echo "#################################################"
-echo "#          The XeroLinux Rice Installer         #"
-echo "#      The Following Script is for KDE Only     #"
-echo "#################################################"
+echo "####################################################################"
+echo "#        The HXERO Hyprland Configurator                           #"
+echo "# Feel free to modify this script and submit more configurations!  #"
+echo "####################################################################"
 tput sgr0
 echo
-echo "Hello $USER, which rice would you like to apply today ?"
+echo "Hello $USER, which Hyprland Configuration would you like to use?"
 echo
 echo "################# Rice Selector #################"
 echo
-echo "1. The Catppuccin Rice (Teddy)."
+echo "1. The XeroAMEDEUS Config."
 echo "2. The Dunes Rice (GamerKing)."
 echo "3. The Nord Rice (DarkXero)."
 echo "4. The Sweet Rice (Teddy)."
@@ -40,9 +40,28 @@ case $CHOICE in
     1 )
       echo
       echo "#################################################"
-      echo "#             Applying Selected Rice            #"
+      echo "#     Applying the XeroAMEDEUS DOTFILES         #"
       echo "#################################################"
       echo
+
+     # Install yay for use
+     pacman -S --needed git base-devel
+     git clone https://aur.archlinux.org/yay.git
+     cd yay
+     makepkg -si
+
+     # Install Swaylockd
+     wget https://github.com/jirutka/swaylockd/archive/v0.1.0/swaylockd-0.1.0.tar.gz
+     tar -xzf swaylockd-0.1.0.tar.gz
+     cd swaylockd-0.1.0
+
+     make build
+     make install DESTDIR=/ prefix=/usr/local
+
+			
+     # Install the necessary packages for XeroAMEDEUS
+     yay -Sy hyprland-git swww-git ttf-font_name-nerd otf-font_name-nerd  wofi dunst jq eww-wayland swayidle swaylock-effects-git  sway-audio-idle-inhibit-git bc pamixer light-git papirus-icon-theme playerctl cava kitty xdg-desktop-portal-wlr grim slurp wl-clipboard socat swappy cliphist hyprpicker nm-connection-editor dictd wl-clip-persist-git blueberry
+
 			sleep 2
 			cd ~ && git clone https://github.com/xerolinux/xero-catppuccin-git && cd ~/xero-catppuccin-git/ && ./install.sh
 			sleep 3
@@ -125,7 +144,7 @@ case $CHOICE in
       echo "#################################################"
       echo
 			sleep 2
-			cd ~ && git clone https://github.com/xerolinux/xero-sweet-git.git && cd ~/xero-sweet-git/ && ./install.sh
+			cd ~ && git clone https://github.com/AmadeusWM/dotfiles-hyprland.git && cd dotfiles-hyprland && cp -r ./* ~/.config/hypr && mv ~/.config/hypr/_hyprland.conf ~/.config/hypr/hyprland.conf 
 			sleep 3
       echo
       # Prompt the user to reboot
@@ -135,40 +154,7 @@ case $CHOICE in
       echo
         # Check the user's response
         if [[ $reboot_response == "y" || $reboot_response == "yes" ]]; then
-          sudo reboot
-        else
-          echo
-          tput setaf 4
-          echo "Please manually reboot your system to apply changes."
-          tput sgr0
-        fi
-        exit 0
-
-      ;;
-
-    5 )
-      echo
-      echo "#################################################"
-      echo "#            Resetting to Vanilla KDE           #"
-      echo "#                                               #"
-      echo "#     Warning, will undo current settings !     #"
-      echo "# This will revert settings to Pure Vanilla KDE #"
-      echo "#################################################"
-      echo
-			sleep 6
-			cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && rm -Rf ~/.config/
-			sudo sed -i "s/GRUB_THEME/#GRUB_THEME/g" /etc/default/grub
-            sudo grub-mkconfig -o /boot/grub/grub.cfg
-			sleep 3
-			echo
-        # Prompt the user to reboot
-        tput setaf 4
-        read -p "Customization Restored. Reboot recommended. Reboot now? (y/n): " reboot_response
-        tput setaf 0
-         echo
-        # Check the user's response
-        if [[ $reboot_response == "y" || $reboot_response == "yes" ]]; then
-          sudo reboot
+          sudo shutdown -r --now
         else
           echo
           tput setaf 4
